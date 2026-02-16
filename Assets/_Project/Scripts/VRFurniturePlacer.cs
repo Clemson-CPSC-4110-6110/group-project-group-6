@@ -1,12 +1,11 @@
 using UnityEngine;
+
 using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class VRFurniturePlacer : MonoBehaviour
 {
     [Header("Controller References")]
-    public XRRayInteractor rayInteractor;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor;
     public LineRenderer lineRenderer;
 
     [Header("Placement Settings")]
@@ -29,6 +28,20 @@ public class VRFurniturePlacer : MonoBehaviour
     private GameObject previewObject;
     private bool isPlacingMode = false;
 
+    void Start()
+    {
+        // Validate references
+        if (rayInteractor == null)
+        {
+            Debug.LogError("VRFurniturePlacer: XR Ray Interactor not assigned!");
+        }
+
+        if (normalMaterial == null || previewMaterial == null || invalidMaterial == null)
+        {
+            Debug.LogError("VRFurniturePlacer: Materials not assigned!");
+        }
+    }
+
     void Update()
     {
         if (isPlacingMode && currentFurniture != null)
@@ -42,6 +55,12 @@ public class VRFurniturePlacer : MonoBehaviour
 
     public void StartPlacingFurniture(GameObject furniturePrefab)
     {
+        if (furniturePrefab == null)
+        {
+            Debug.LogError("Furniture prefab is null!");
+            return;
+        }
+
         // Cancel any existing placement
         if (currentFurniture != null)
         {
@@ -70,6 +89,8 @@ public class VRFurniturePlacer : MonoBehaviour
 
     void UpdateFurniturePosition()
     {
+        if (rayInteractor == null) return;
+
         RaycastHit hit;
 
         if (Physics.Raycast(
@@ -80,13 +101,14 @@ public class VRFurniturePlacer : MonoBehaviour
             placementSurface))
         {
             Vector3 targetPosition = hit.point + (hit.normal * rayHitOffset);
-
             previewObject.transform.position = targetPosition;
         }
     }
 
     void HandleRotation()
     {
+        if (!rotateAction.action.enabled) return;
+
         Vector2 rotateInput = rotateAction.action.ReadValue<Vector2>();
 
         if (Mathf.Abs(rotateInput.x) > 0.1f)
@@ -98,11 +120,12 @@ public class VRFurniturePlacer : MonoBehaviour
 
     void HandlePlacement()
     {
+        if (!placeAction.action.enabled) return;
+
         if (placeAction.action.WasPressedThisFrame())
         {
             if (currentFurniture.CanBePlaced())
             {
-                // Finalize placement
                 currentFurniture.SetPreviewMode(false);
                 currentFurniture = null;
                 previewObject = null;
@@ -112,13 +135,15 @@ public class VRFurniturePlacer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Cannot place furniture here - invalid position!");
+                Debug.Log("Cannot place furniture - overlapping with objects!");
             }
         }
     }
 
     void HandleCancel()
     {
+        if (!cancelAction.action.enabled) return;
+
         if (cancelAction.action.WasPressedThisFrame())
         {
             Destroy(previewObject);
