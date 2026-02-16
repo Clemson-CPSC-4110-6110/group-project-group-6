@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6341012073722089954}
   - component: {fileID: 5651552737780894660}
   - component: {fileID: 4458666302006263615}
+  - component: {fileID: 3003468503410055667}
   m_Layer: 0
   m_Name: testFurnitureB
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,3 +357,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &3003468503410055667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939470773042964250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061651cb1380df14f880b7989e013427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FurniturePiece
+  normalMaterial: {fileID: 2100000, guid: 9b03a2295a729fa4ea8b08d19d8a9b2d, type: 2}
+  previewMaterial: {fileID: 2100000, guid: ea9f3e938b862a249a4661f051116cb0, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: 299786f2f605de3458615a7063507f42, type: 2}
+  isPlaced: 0
+  snapToFloor: 1
