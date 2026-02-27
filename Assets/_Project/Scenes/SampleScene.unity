@@ -1545,8 +1545,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 173879551}
   spawnDistance: 0.5
   spawnHeightOffset: 0
-  furnitureProto1: {fileID: 2188802082145994486, guid: 9f9b6730d75dcfb47a0d167173964647, type: 3}
-  furnitureProto2: {fileID: 8939470773042964250, guid: 8bf016be8e3b743419d8a83ce3c306fd, type: 3}
+  furnitureProto1: {fileID: 683962701679713639, guid: 76563eb09a76cae4a902c3be4033c954, type: 3}
+  furnitureProto2: {fileID: 2224838818376178841, guid: 1756a9280b40ace4b8eb3d0875cb9fbe, type: 3}
   limitOneAtATime: 0
 --- !u!1 &951160322
 GameObject:
@@ -3236,10 +3236,10 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1954172690}
   - {fileID: 1486414903}
   - {fileID: 851921710}
   - {fileID: 586292643}
   - {fileID: 1976124452}
   - {fileID: 676962783}
   - {fileID: 471639699}
+  - {fileID: 1954172690}
