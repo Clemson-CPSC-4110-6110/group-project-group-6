@@ -2359,14 +2359,14 @@ MonoBehaviour:
   couch: {fileID: 2224838818376178841, guid: 1756a9280b40ace4b8eb3d0875cb9fbe, type: 3}
   bed: {fileID: 6976356595764198731, guid: 515f8c839aec2bf4db98e79eeadcbbde, type: 3}
   coffee_table: {fileID: 3286228899461933977, guid: 0577c69f1761c4a41b7053af753b0820, type: 3}
-  dish: {fileID: 4219254366163903785, guid: 4dd304aacd53d3c4589956b0fca9a8df, type: 3}
-  drink: {fileID: 3962899205002032433, guid: aaf11a042e9932a40bb90b9b171a128e, type: 3}
-  dumbbell: {fileID: 4668012554734224365, guid: f556d04045a305d4d8c954744120bad6, type: 3}
-  flower: {fileID: 6596774637294519909, guid: 625c63d1d4491964d8bdca1e8140e3c1, type: 3}
-  lamp: {fileID: 2513341517135006344, guid: d586cdda16abbf74e84b1e76b588d8bf, type: 3}
-  piano: {fileID: 873254747532052552, guid: ff8bf27806498b14db60a3c20a21eec2, type: 3}
-  toy: {fileID: 6557717566896455631, guid: eeaad410de59e8c408e89f8f1260dece, type: 3}
-  scratch_post: {fileID: 7608240248841205652, guid: d74f3a8534dcedd46838d03042f5cf27, type: 3}
+  dresser: {fileID: 4625217698310977100, guid: b0ee42d7cd74db74f8600dd41510aaca, type: 3}
+  drink: {fileID: 6647264487544211510, guid: 0e950f7ede44ff2498777e72d8c4afd3, type: 3}
+  dumbbell: {fileID: 3419604343230108847, guid: 8e5b18f1a8bf49442bb48fa97239919e, type: 3}
+  flower: {fileID: 6993101247593977759, guid: 54a668398cfe2d64085288c5feacccf3, type: 3}
+  lamp: {fileID: 1565050529379785847, guid: 76708401c426732459ae60edbb20175a, type: 3}
+  piano: {fileID: 1956270766556887482, guid: 7fa3c28be34f08648aaea5826d531151, type: 3}
+  toy: {fileID: 1758347765175314616, guid: 144c5f4bb7249114b9a4ed3d2944eb2e, type: 3}
+  scratch_post: {fileID: 7834097390150154221, guid: 64bad991077f40f44a57703bc2f31289, type: 3}
   limitOneAtATime: 0
 --- !u!1 &862801057
 GameObject:
@@ -2947,7 +2947,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: dish_spawn
+        m_MethodName: dresser_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5066,7 +5066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dish of Food
+  m_text: Dresser
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

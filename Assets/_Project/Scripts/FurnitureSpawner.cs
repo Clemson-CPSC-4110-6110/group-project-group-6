@@ -12,7 +12,7 @@ public class FurnitureSpawner : MonoBehaviour
     public GameObject couch;
     public GameObject bed;
     public GameObject coffee_table;
-    public GameObject dish;
+    public GameObject dresser;
     public GameObject drink;
     public GameObject dumbbell;
     public GameObject flower;
@@ -52,9 +52,9 @@ public class FurnitureSpawner : MonoBehaviour
         SpawnFurniture(coffee_table);
     }
 
-    public void dish_spawn()
+    public void dresser_spawn()
     {
-        SpawnFurniture(dish);
+        SpawnFurniture(dresser);
     }
 
     public void drink_spawn()
