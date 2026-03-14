@@ -1545,8 +1545,17 @@ MonoBehaviour:
   spawnPoint: {fileID: 173879551}
   spawnDistance: 0.5
   spawnHeightOffset: 0
-  furnitureProto1: {fileID: 683962701679713639, guid: 76563eb09a76cae4a902c3be4033c954, type: 3}
-  furnitureProto2: {fileID: 2224838818376178841, guid: 1756a9280b40ace4b8eb3d0875cb9fbe, type: 3}
+  fridge: {fileID: 683962701679713639, guid: 76563eb09a76cae4a902c3be4033c954, type: 3}
+  couch: {fileID: 2224838818376178841, guid: 1756a9280b40ace4b8eb3d0875cb9fbe, type: 3}
+  air_hockey: {fileID: 7321423145260268018, guid: d5076481aac507e4a8a37c3b0eea7727, type: 3}
+  coffee_table: {fileID: 6879242674631676303, guid: 9f9cd54077faf65438d05b189cdde7f5, type: 3}
+  dish: {fileID: 4219254366163903785, guid: 4dd304aacd53d3c4589956b0fca9a8df, type: 3}
+  drink: {fileID: 3962899205002032433, guid: aaf11a042e9932a40bb90b9b171a128e, type: 3}
+  dumbbell: {fileID: 4668012554734224365, guid: f556d04045a305d4d8c954744120bad6, type: 3}
+  flower: {fileID: 6596774637294519909, guid: 625c63d1d4491964d8bdca1e8140e3c1, type: 3}
+  lamp: {fileID: 2513341517135006344, guid: d586cdda16abbf74e84b1e76b588d8bf, type: 3}
+  piano: {fileID: 873254747532052552, guid: ff8bf27806498b14db60a3c20a21eec2, type: 3}
+  toy: {fileID: 6557717566896455631, guid: eeaad410de59e8c408e89f8f1260dece, type: 3}
   limitOneAtATime: 0
 --- !u!1 &951160322
 GameObject:
@@ -2751,6 +2760,10 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_Name
       value: XR Device Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

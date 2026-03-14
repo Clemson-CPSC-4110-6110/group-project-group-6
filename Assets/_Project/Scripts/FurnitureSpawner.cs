@@ -3,16 +3,25 @@ using UnityEngine;
 public class FurnitureSpawner : MonoBehaviour
 {
     [Header("Spawn Settings")]
-    public Transform spawnPoint; // Where furniture appears
-    public float spawnDistance = 0.5f; // Distance in front of spawn point
-    public float spawnHeightOffset = 0f; // Height adjustment
+    public Transform spawnPoint;
+    public float spawnDistance = 0.5f;
+    public float spawnHeightOffset = 0f;
 
     [Header("Furniture Prefabs")]
-    public GameObject furnitureProto1;
-    public GameObject furnitureProto2;
+    public GameObject fridge;
+    public GameObject couch;
+    public GameObject air_hockey;
+    public GameObject coffee_table;
+    public GameObject dish;
+    public GameObject drink;
+    public GameObject dumbbell;
+    public GameObject flower;
+    public GameObject lamp;
+    public GameObject piano;
+    public GameObject toy;
 
     [Header("Spawn Behavior")]
-    public bool limitOneAtATime = false; // If true, only one furniture can exist at spawn area
+    public bool limitOneAtATime = false;
 
     private GameObject lastSpawnedObject;
 
@@ -23,16 +32,58 @@ public class FurnitureSpawner : MonoBehaviour
             Debug.LogError("FurnitureSpawner: Spawn Point not assigned!");
         }
     }
-
-    // Called by UI buttons
-    public void proto1()
+    public void fridge_spawn()
     {
-        SpawnFurniture(furnitureProto1);
+        SpawnFurniture(fridge);
     }
 
-    public void proto2()
+    public void couch_spawn()
     {
-        SpawnFurniture(furnitureProto2);
+        SpawnFurniture(couch);
+    }
+
+    public void air_hockey_spawn()
+    {
+        SpawnFurniture(air_hockey);
+    }
+    public void coffee_table_spawn()
+    {
+        SpawnFurniture(coffee_table);
+    }
+
+    public void dish_spawn()
+    {
+        SpawnFurniture(dish);
+    }
+
+    public void drink_spawn()
+    {
+        SpawnFurniture(drink);
+    }
+
+    public void dumbbell_spawn()
+    {
+        SpawnFurniture(dumbbell);
+    }
+
+    public void flower_spawn()
+    {
+        SpawnFurniture(flower);
+    }
+
+    public void lamp_spawn()
+    {
+        SpawnFurniture(lamp);
+    }
+
+    public void piano_spawn()
+    {
+        SpawnFurniture(piano);
+    }
+
+    public void toy_spawn()
+    {
+        SpawnFurniture(toy);
     }
 
     void SpawnFurniture(GameObject prefab)
@@ -49,21 +100,17 @@ public class FurnitureSpawner : MonoBehaviour
             return;
         }
 
-        // Delete previous furniture if limit is enabled
         if (limitOneAtATime && lastSpawnedObject != null)
         {
             Destroy(lastSpawnedObject);
         }
 
-        // Calculate spawn position
         Vector3 spawnPosition = spawnPoint.position +
                                (spawnPoint.forward * spawnDistance) +
                                (Vector3.up * spawnHeightOffset);
 
-        // Spawn the furniture
         GameObject newFurniture = Instantiate(prefab, spawnPosition, spawnPoint.rotation);
 
-        // Make sure gravity is off initially
         Rigidbody rb = newFurniture.GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -74,6 +121,7 @@ public class FurnitureSpawner : MonoBehaviour
 
         Debug.Log("Spawned: " + prefab.name + " at " + spawnPosition);
     }
+
     public void ClearAllFurniture()
     {
         GameObject[] allFurniture = GameObject.FindGameObjectsWithTag("Furniture");
