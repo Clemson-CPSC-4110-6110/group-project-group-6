@@ -19,6 +19,7 @@ public class FurnitureSpawner : MonoBehaviour
     public GameObject lamp;
     public GameObject piano;
     public GameObject toy;
+    public GameObject scratch_post;
 
     [Header("Spawn Behavior")]
     public bool limitOneAtATime = false;
@@ -84,6 +85,11 @@ public class FurnitureSpawner : MonoBehaviour
     public void toy_spawn()
     {
         SpawnFurniture(toy);
+    }
+
+    public void scratch_spawn()
+    {
+        SpawnFurniture(scratch_post);
     }
 
     void SpawnFurniture(GameObject prefab)
