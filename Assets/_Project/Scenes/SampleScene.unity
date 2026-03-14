@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 281797517}
   - component: {fileID: 281797516}
   m_Layer: 0
-  m_Name: FurnitureProto2 (1)
+  m_Name: button8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto2
+        m_MethodName: fridge_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestB
+  m_text: Fridge
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 380543846}
   - component: {fileID: 380543845}
   m_Layer: 0
-  m_Name: FurnitureProto2 (2)
+  m_Name: button9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1074,7 +1074,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto2
+        m_MethodName: lamp_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestA
+  m_text: Drink
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1739,7 +1739,7 @@ GameObject:
   - component: {fileID: 718056096}
   - component: {fileID: 718056095}
   m_Layer: 0
-  m_Name: FurnitureProto1 (5)
+  m_Name: button6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1811,7 +1811,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto1
+        m_MethodName: dumbbell_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestB
+  m_text: Flowers
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2053,7 +2053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestB
+  m_text: Toy Car
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2425,7 +2425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestB
+  m_text: Lamp
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2562,7 +2562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestA
+  m_text: Coffee Table
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2655,7 +2655,7 @@ GameObject:
   - component: {fileID: 939242723}
   - component: {fileID: 939242722}
   m_Layer: 0
-  m_Name: FurnitureProto1 (2)
+  m_Name: button3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2727,7 +2727,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto1
+        m_MethodName: couch_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2875,7 +2875,7 @@ GameObject:
   - component: {fileID: 1005143481}
   - component: {fileID: 1005143480}
   m_Layer: 0
-  m_Name: FurnitureProto1 (3)
+  m_Name: button4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2947,7 +2947,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto1
+        m_MethodName: dish_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3008,7 +3008,7 @@ GameObject:
   - component: {fileID: 1045931938}
   - component: {fileID: 1045931937}
   m_Layer: 0
-  m_Name: FurnitureProto2 (3)
+  m_Name: button10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3080,7 +3080,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto2
+        m_MethodName: piano_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3295,7 +3295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestA
+  m_text: Couch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3393,7 +3393,7 @@ GameObject:
   - component: {fileID: 1191134653}
   - component: {fileID: 1191134652}
   m_Layer: 0
-  m_Name: FurnitureProto1 (1)
+  m_Name: button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3465,7 +3465,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto1
+        m_MethodName: coffee_table_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3570,7 +3570,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestA
+  m_text: Dumbbell
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3663,7 +3663,7 @@ GameObject:
   - component: {fileID: 1248981394}
   - component: {fileID: 1248981393}
   m_Layer: 0
-  m_Name: FurnitureProto2 (5)
+  m_Name: button12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3735,7 +3735,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto2
+        m_MethodName: toy_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3976,7 +3976,7 @@ GameObject:
   - component: {fileID: 1353096019}
   - component: {fileID: 1353096018}
   m_Layer: 0
-  m_Name: FurnitureProto2
+  m_Name: button7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4048,7 +4048,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto2
+        m_MethodName: flower_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4235,7 +4235,7 @@ GameObject:
   - component: {fileID: 1495240483}
   - component: {fileID: 1495240482}
   m_Layer: 0
-  m_Name: FurnitureProto2 (4)
+  m_Name: button11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4307,7 +4307,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto2
+        m_MethodName: scratch_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4483,7 +4483,7 @@ GameObject:
   - component: {fileID: 1750327458}
   - component: {fileID: 1750327457}
   m_Layer: 0
-  m_Name: FurnitureProto1 (4)
+  m_Name: button5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4555,7 +4555,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto1
+        m_MethodName: drink_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5066,7 +5066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestA
+  m_text: Dish of Food
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5296,7 +5296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestB
+  m_text: Scratch Post
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5489,7 +5489,7 @@ GameObject:
   - component: {fileID: 2046047797}
   - component: {fileID: 2046047796}
   m_Layer: 0
-  m_Name: FurnitureProto1
+  m_Name: button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5561,7 +5561,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: proto1
+        m_MethodName: air_hockey_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5666,7 +5666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestB
+  m_text: Piano
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5803,7 +5803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TestA
+  m_text: Air Hockey
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
