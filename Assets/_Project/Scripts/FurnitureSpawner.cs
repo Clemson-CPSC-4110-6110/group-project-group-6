@@ -10,7 +10,7 @@ public class FurnitureSpawner : MonoBehaviour
     [Header("Furniture Prefabs")]
     public GameObject fridge;
     public GameObject couch;
-    public GameObject air_hockey;
+    public GameObject bed;
     public GameObject coffee_table;
     public GameObject dish;
     public GameObject drink;
@@ -43,9 +43,9 @@ public class FurnitureSpawner : MonoBehaviour
         SpawnFurniture(couch);
     }
 
-    public void air_hockey_spawn()
+    public void bed_spawn()
     {
-        SpawnFurniture(air_hockey);
+        SpawnFurniture(bed);
     }
     public void coffee_table_spawn()
     {

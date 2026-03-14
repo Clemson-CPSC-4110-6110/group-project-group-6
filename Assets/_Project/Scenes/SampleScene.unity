@@ -2357,8 +2357,8 @@ MonoBehaviour:
   spawnHeightOffset: 0
   fridge: {fileID: 683962701679713639, guid: 76563eb09a76cae4a902c3be4033c954, type: 3}
   couch: {fileID: 2224838818376178841, guid: 1756a9280b40ace4b8eb3d0875cb9fbe, type: 3}
-  air_hockey: {fileID: 7321423145260268018, guid: d5076481aac507e4a8a37c3b0eea7727, type: 3}
-  coffee_table: {fileID: 6879242674631676303, guid: 9f9cd54077faf65438d05b189cdde7f5, type: 3}
+  bed: {fileID: 6976356595764198731, guid: 515f8c839aec2bf4db98e79eeadcbbde, type: 3}
+  coffee_table: {fileID: 3286228899461933977, guid: 0577c69f1761c4a41b7053af753b0820, type: 3}
   dish: {fileID: 4219254366163903785, guid: 4dd304aacd53d3c4589956b0fca9a8df, type: 3}
   drink: {fileID: 3962899205002032433, guid: aaf11a042e9932a40bb90b9b171a128e, type: 3}
   dumbbell: {fileID: 4668012554734224365, guid: f556d04045a305d4d8c954744120bad6, type: 3}
@@ -5561,7 +5561,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854359438}
         m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: air_hockey_spawn
+        m_MethodName: bed_spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5803,7 +5803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Air Hockey
+  m_text: Bed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
