@@ -56,8 +56,13 @@ public class RoomColorChanger : MonoBehaviour
         {
             t += Time.deltaTime / duration;
             Color blended = Color.Lerp(from, to, t);
+            GameObject[] rooms = GameObject.FindGameObjectsWithTag("Floor");
+            Renderer[] roomRenderersAll = new Renderer[rooms.Length];
+            for (int i = 0; i < rooms.Length; i++)            {
+                roomRenderersAll[i] = rooms[i].GetComponent<Renderer>();
+            }
 
-            foreach (Renderer r in roomRenderers)
+            foreach (Renderer r in roomRenderersAll)
             {
                 r.GetPropertyBlock(_propBlock);
                 _propBlock.SetColor("_BaseColor", blended);
