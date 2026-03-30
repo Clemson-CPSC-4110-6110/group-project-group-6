@@ -62,7 +62,7 @@ public class RoomColorChanger : MonoBehaviour
                 roomRenderersAll[i] = rooms[i].GetComponent<Renderer>();
             }
 
-            foreach (Renderer r in roomRenderersAll)
+            foreach (Renderer r in roomRenderers)
             {
                 r.GetPropertyBlock(_propBlock);
                 _propBlock.SetColor("_BaseColor", blended);
