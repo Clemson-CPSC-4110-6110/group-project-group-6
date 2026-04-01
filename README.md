@@ -26,9 +26,8 @@ Mind Palace VR is a virtual reality experience that allows users to build and ex
 ## How to Experience the Full Application
 
 1. **Setup**
-   - *(Build instructions — e.g. Unity version, build target, headset compatibility)*
+   - Build and download the APK
    - Put on your headset and pick up both controllers
-   - *(Any required project build/run steps)*
 
 2. **Getting Started**
    - Explore you first room upon startup
