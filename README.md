@@ -34,17 +34,17 @@ Mind Palace VR is a virtual reality experience that allows users to build and ex
    - Walk around and get comfortable with locomotion
 
 3. **Furnishing Your Space**
-   - Open the furniture menu and add at least 2 pieces to your first room
+   - Observe the furniture menu and add at least 2 pieces to your first room
    - Grab and drag furniture to reposition it anywhere in the room
 
 4. **Decorating**
-   - Open the wall color interface to repaint your room
+   - Interact with the wall color interface to repaint your room
 
 5. **Drawing**
    - Move to your second room
    - Pick up the pen object
    - Change the pen color using the color selector
-   - Draw on the walls by pressing the draw input while moving the pen
+   - Draw on the walls
 
 6. **Portal Gun**
    - Aim at a surface and shoot to place a portal
