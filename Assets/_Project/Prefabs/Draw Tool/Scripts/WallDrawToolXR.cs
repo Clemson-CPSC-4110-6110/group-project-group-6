@@ -5,12 +5,12 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using Unity.VisualScripting;
 
-public class LineDrawToolXR : MonoBehaviour
+public class WallDrawToolXR : MonoBehaviour
 {
-    public XRSocketInteractor colorSocket;
-    public GameObject drawPosition;
-    private GameObject inSocket = null;
     private XRGrabInteractableFixed grabInteractableFixed;
+
+    public GameObject drawPosition;
+    private string penColor;
 
     List<Vector3> linePoints;
     private float timer;
@@ -20,7 +20,7 @@ public class LineDrawToolXR : MonoBehaviour
     private LineRenderer drawLine;
     public float lineWidth;
     
-    private bool isTriggerHeld = false;
+    private bool isTouchingSurface = false;
     
     private void Awake()
     {
@@ -32,70 +32,30 @@ public class LineDrawToolXR : MonoBehaviour
 
     private void Start()
     {
-        grabInteractableFixed.activated.AddListener(Draw);
-        grabInteractableFixed.deactivated.AddListener(Release);
         grabInteractableFixed.selectExited.AddListener(Dropped);
+        penColor = gameObject.name;
     }
 
-    private void Draw(ActivateEventArgs args)
+    private void OnTriggerEnter(Collider other)
     {
-        IXRSelectInteractable socketedInteractable = colorSocket.GetOldestInteractableSelected();
-        
-        isTriggerHeld = true;
+        isTouchingSurface = true;
         newLine = new GameObject();
         drawLine = newLine.AddComponent<LineRenderer>();
         drawLine.material = new Material(Shader.Find("Sprites/Default"));
         drawLine.startWidth = lineWidth;
         drawLine.endWidth = lineWidth;
 
-        inSocket = socketedInteractable.transform.gameObject;
-
-        if (inSocket.name == "Red")
+        if (penColor == "Red Marker")
         {
             drawLine.startColor = Color.red;
             drawLine.endColor = Color.red;
         }
-        else if (inSocket.name == "Orange")
-        {
-            drawLine.startColor = Color.orange;
-            drawLine.endColor = Color.orange;
-        }
-        else if (inSocket.name == "Yellow")
-        {
-            drawLine.startColor = Color.yellow;
-            drawLine.endColor = Color.yellow;
-        }
-        else if (inSocket.name == "Green")
-        {
-            drawLine.startColor = Color.green;
-            drawLine.endColor = Color.green;
-        }
-        else if (inSocket.name == "Teal")
-        {
-            drawLine.startColor = Color.teal;
-            drawLine.endColor = Color.teal;
-        }
-        else if (inSocket.name == "Blue")
+        else if (penColor == "Blue Marker")
         {
             drawLine.startColor = Color.blue;
             drawLine.endColor = Color.blue;
         }
-        else if (inSocket.name == "Purple")
-        {
-            drawLine.startColor = Color.purple;
-            drawLine.endColor = Color.purple;
-        }
-        else if (inSocket.name == "Pink")
-        {
-            drawLine.startColor = Color.pink;
-            drawLine.endColor = Color.pink;
-        }
-        else if (inSocket.name == "Brown")
-        {
-            drawLine.startColor = Color.saddleBrown;
-            drawLine.endColor = Color.saddleBrown;
-        }
-        else if (inSocket.name == "Black")
+        else if (penColor == "Black Marker")
         {
             drawLine.startColor = Color.black;
             drawLine.endColor = Color.black;
@@ -109,9 +69,9 @@ public class LineDrawToolXR : MonoBehaviour
         Debug.Log("Trigger Pressed");
     }
 
-    private void Release(DeactivateEventArgs args)
+    private void OnTriggerExit(Collider other)
     {
-        isTriggerHeld = false;
+        isTouchingSurface = false;
 
         linePoints.Clear();
 
@@ -120,7 +80,7 @@ public class LineDrawToolXR : MonoBehaviour
 
     private void Dropped(SelectExitEventArgs args)
     {
-        isTriggerHeld = false;
+        isTouchingSurface = false;
 
         linePoints.Clear();
 
@@ -129,7 +89,7 @@ public class LineDrawToolXR : MonoBehaviour
 
     public void Update()
     {
-        if (isTriggerHeld)
+        if (isTouchingSurface)
         {
             timer -= Time.deltaTime;
             if (timer <= 0)
@@ -144,12 +104,6 @@ public class LineDrawToolXR : MonoBehaviour
         }
 
         
-    }
-
-    private void OnDestroy()
-    {
-        grabInteractableFixed.activated.RemoveListener(Draw);
-        grabInteractableFixed.deactivated.RemoveListener(Release);
     }
 
     private Vector3 GetDrawPosition()

@@ -1,3 +1,4 @@
+using System.Diagnostics.Tracing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -22,14 +23,42 @@ public class ColorModifier : MonoBehaviour
             {
                 currentColor.color = Color.red;
             }
+            else if (inSocket.name == "Orange")
+            {
+                currentColor.color = Color.orange;
+            }
+            else if (inSocket.name == "Yellow")
+            {
+                currentColor.color = Color.yellow;
+            }
             else if (inSocket.name == "Green")
             {
                 currentColor.color = Color.green;
             }
+            else if (inSocket.name == "Teal")
+            {
+                currentColor.color = Color.teal;
+            }
             else if (inSocket.name == "Blue")
             {
                 currentColor.color = Color.blue;
-        }
+            }
+            else if (inSocket.name == "Purple")
+            {
+                currentColor.color = Color.purple;
+            }
+            else if (inSocket.name == "Pink")
+            {
+                currentColor.color = Color.pink;
+            }
+            else if (inSocket.name == "Brown")
+            {
+                currentColor.color = Color.brown;
+            }
+            else if (inSocket.name == "Black")
+            {
+                currentColor.color = Color.black;
+            }
         }
         else
         {
