@@ -18,8 +18,7 @@ Mind Palace VR is a virtual reality experience that allows users to build and ex
 
 **Customization Tools**
 - Wall color selection — change the color of any room's walls
-- Drawing pen — pick up a physical pen object, change its color, and draw directly on walls
-- Portal gun — aim and shoot portals; walk through to teleport between locations
+- Drawing pens — pick up a physical pen object, change its color, and draw on the air, or pick up the static pens and draw on surfaces
 
 ---
 
@@ -41,14 +40,9 @@ Mind Palace VR is a virtual reality experience that allows users to build and ex
    - Interact with the wall color interface to repaint your room
 
 5. **Drawing**
-   - Move to your second room
-   - Pick up the pen object
-   - Change the pen color using the color selector
-   - Draw on the walls
-
-6. **Portal Gun**
-   - Aim at a surface and shoot to place a portal
-   - Walk through the portal to teleport
+   - Pick up one of the pen objects on your left arm
+   - Change the pen color using the pallet on your right arm (air draw pen only)
+   - Draw in the air or on the walls with what pen is used
 
 ---
 
@@ -57,13 +51,13 @@ Mind Palace VR is a virtual reality experience that allows users to build and ex
 | Action | Control |
 |---|---|
 | Locomotion / Move | Left Joystick |
-| Interact / Press Button / Grab | Right/Left Trigger |
+| Interact / Press Button / Grab / Air Draw | Right/Left Trigger |
 | Move furniture, pick up pen | Right/Left Grip |
 
 ---
 
 ## Known Issues & Limitations
 
-As of writing this, the portals will match visual expectations but do not allow you to walk through them.
+Portal features have been removed for now as to allow for compilation, though we intend to fix and re-add the feature in the future
 
 ---
