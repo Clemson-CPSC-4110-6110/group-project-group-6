@@ -33,6 +33,8 @@ public class Room : MonoBehaviour
             Debug.Log("Room already exists at " + newPosition);
             return;
         }
+        
+        GetComponent<AudioSource>().Play();
         occupiedPositions.Add(newPosition);
 
         GameObject newRoom = Instantiate(roomPrefab, 
