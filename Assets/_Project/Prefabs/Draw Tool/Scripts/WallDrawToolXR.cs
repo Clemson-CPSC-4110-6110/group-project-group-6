@@ -4,13 +4,17 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class WallDrawToolXR : MonoBehaviour
 {
     private XRGrabInteractableFixed grabInteractableFixed;
 
     public GameObject drawPosition;
-    private string penColor;
+    [SerializeField] private Slider redSlider;
+    [SerializeField] private Slider greenSlider;
+    [SerializeField] private Slider blueSlider;
+
 
     List<Vector3> linePoints;
     private float timer;
@@ -32,8 +36,11 @@ public class WallDrawToolXR : MonoBehaviour
 
     private void Start()
     {
+        redSlider.value = 0.5f;
+        greenSlider.value = 0.5f;
+        blueSlider.value = 0.5f;
+
         grabInteractableFixed.selectExited.AddListener(Dropped);
-        penColor = gameObject.name;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,28 +52,8 @@ public class WallDrawToolXR : MonoBehaviour
         drawLine.startWidth = lineWidth;
         drawLine.endWidth = lineWidth;
 
-        if (penColor == "Red Marker")
-        {
-            drawLine.startColor = Color.red;
-            drawLine.endColor = Color.red;
-        }
-        else if (penColor == "Blue Marker")
-        {
-            drawLine.startColor = Color.blue;
-            drawLine.endColor = Color.blue;
-        }
-        else if (penColor == "Black Marker")
-        {
-            drawLine.startColor = Color.black;
-            drawLine.endColor = Color.black;
-        }
-        else
-        {
-            drawLine.startColor = Color.white;
-            drawLine.endColor = Color.white;
-        }
-
-        Debug.Log("Trigger Pressed");
+        drawLine.startColor = new Color(redSlider.value,greenSlider.value,blueSlider.value);
+        drawLine.endColor = new Color(redSlider.value,greenSlider.value,blueSlider.value);
     }
 
     private void OnTriggerExit(Collider other)
