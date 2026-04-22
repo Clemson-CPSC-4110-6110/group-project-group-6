@@ -43,6 +43,7 @@ public class LineDrawToolXR : MonoBehaviour
         
         isTriggerHeld = true;
         newLine = new GameObject();
+        newLine.layer = LayerMask.NameToLayer("Lines");
         drawLine = newLine.AddComponent<LineRenderer>();
         drawLine.material = new Material(Shader.Find("Sprites/Default"));
         drawLine.startWidth = lineWidth;

@@ -47,6 +47,8 @@ public class WallDrawToolXR : MonoBehaviour
     {
         isTouchingSurface = true;
         newLine = new GameObject();
+        newLine.layer = LayerMask.NameToLayer("Lines");
+        MeshCollider mc = newLine.AddComponent<MeshCollider>();
         drawLine = newLine.AddComponent<LineRenderer>();
         drawLine.material = new Material(Shader.Find("Sprites/Default"));
         drawLine.startWidth = lineWidth;
